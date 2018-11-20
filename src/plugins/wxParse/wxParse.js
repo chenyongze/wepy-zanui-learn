@@ -111,7 +111,7 @@ function calMoreImageInfo(e, idx, that, bindName) {
 function wxAutoImageCal(originalWidth, originalHeight, that, bindName) {
   // 获取图片的原始长宽
   var windowWidth = 0,
-    windowHeight = 0
+   windowHeight = 0
   var autoWidth = 0,
     autoHeight = 0
   var results = {}

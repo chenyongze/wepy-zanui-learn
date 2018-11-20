@@ -10,3 +10,4 @@ lerna-debug.log
 .DS_Store
 .idea
 .wepycache
+package-lock.json
