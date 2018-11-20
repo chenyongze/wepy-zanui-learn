@@ -1,4 +1,4 @@
-<style lang="less">
+<style lang="scss">
 
 // 引入 iconfont
 @import './style/iconfont.wxss';
@@ -6,7 +6,7 @@
 @import './style/bankIconFont.wxss';
 page {
   background-color: #f4f4f4;
-  font-size: 24rpx;
+  font-size: 12px;
   color: #333;
   image {
     vertical-align: middle;
@@ -14,7 +14,7 @@ page {
 }
 
 
-@import './zanui/helper.wxss';
+@import 'zanui/helper.scss';
 .container {
   background: #f9f9f9;
   overflow: hidden;
@@ -58,6 +58,8 @@ export default class extends wepy.app {
   config = {
     pages: [
       'pages/index',
+      'pages/category',
+      'pages/me',
       'example/dashboard',
       'example/actionsheet',
       'example/btn',
@@ -92,41 +94,41 @@ export default class extends wepy.app {
     },
     debug: true,
     tabBar: {
-          selectedColor: '#ff2d4a',
-          backgroundColor: '#f4f4f4',
-          list: [
-            {
-              pagePath: 'pages/index',
-              text: '首页',
-              iconPath: '/images/images/icon_home@3x.png',
-              selectedIconPath: '/images/images/icon_home_active@3x.png'
-            },
-            {
-              pagePath: 'example/dashboard',
-              text: '分类',
-              iconPath: '/images/images/icon_category@3x.png',
-              selectedIconPath: '/images/images/icon_category_active@3x.png'
-            },
-            {
-              pagePath: 'example/badge',
-              text: '优show',
-              iconPath: '/images/images/icon_show@3x.png',
-              selectedIconPath: '/images/images/icon_show_active@3x.png'
-            },
-            {
-              pagePath: 'example/toast',
-              text: '购物车',
-              iconPath: '/images/images/icon_cart@3x.png',
-              selectedIconPath: '/images/images/icon_cart_active@3x.png'
-            },
-            {
-              pagePath: 'example/tab',
-              text: '我的',
-              iconPath: '/images/images/icon_me@3x.png',
-              selectedIconPath: '/images/images/icon_me_active@3x.png'
-            }
-          ]
-     }
+      selectedColor: '#ff2d4a',
+      backgroundColor: '#f4f4f4',
+      list: [
+        {
+          pagePath: 'pages/index',
+          text: '首页',
+          iconPath: '/images/images/icon_home@3x.png',
+          selectedIconPath: '/images/images/icon_home_active@3x.png'
+        },
+        {
+          pagePath: 'pages/category',
+          text: '分类',
+          iconPath: '/images/images/icon_category@3x.png',
+          selectedIconPath: '/images/images/icon_category_active@3x.png'
+        },
+        {
+          pagePath: 'example/badge',
+          text: '优show',
+          iconPath: '/images/images/icon_show@3x.png',
+          selectedIconPath: '/images/images/icon_show_active@3x.png'
+        },
+        {
+          pagePath: 'example/toast',
+          text: '购物车',
+          iconPath: '/images/images/icon_cart@3x.png',
+          selectedIconPath: '/images/images/icon_cart_active@3x.png'
+        },
+        {
+          pagePath: 'pages/me',
+          text: '我的',
+          iconPath: '/images/images/icon_me@3x.png',
+          selectedIconPath: '/images/images/icon_me_active@3x.png'
+        }
+      ]
+    }
   }
 
   constructor() {

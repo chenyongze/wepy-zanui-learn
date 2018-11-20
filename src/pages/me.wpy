@@ -1,9 +1,9 @@
-<style lang="less">
+<style lang="scss">
 
 </style>
 <template>
   <view class="Me">
-    分类
+    {{namex}}
   </view>
 </template>
 
@@ -15,7 +15,9 @@ export default class Me extends wepy.page {
   config = {
     navigationBarTitleText: '我的'
   }
-
+  data = {
+    namex: 'xxxxxxxx'
+  }
   onLoad() {
     console.log('onLoad')
   }

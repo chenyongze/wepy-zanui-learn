@@ -1,6 +1,5 @@
 // 引入 wepy 到当前脚本文件
 import wepy from 'wepy'
-
 // 定义封装请求函数
 const requestData = (url, params = {}) => {
   return wepy.request({
@@ -16,7 +15,6 @@ const requestData = (url, params = {}) => {
 }
 // 请求基准路径
 requestData.baseUrl = ''
-
 // 导出封装函数
 export default {
   requestData

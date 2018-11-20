@@ -1,5 +1,5 @@
 {
-  "name": "wepy-wechat-demo",
+  "name": "wepy-zanui-learn",
   "version": "2.4.4",
   "description": "基于有赞zanui-weapp的wepy组件库",
   "main": "dist/app.js",
@@ -11,6 +11,7 @@
   "author": "yongze.chen",
   "license": "ISC",
   "dependencies": {
+    "node-sass": "^4.10.0",
     "wepy": "^1.7.2",
     "wepy-async-function": "^1.4.6",
     "wepy-com-toast": "^1.0.2"
