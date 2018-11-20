@@ -1,0 +1,15 @@
+{
+	"description": "project description",
+	"setting": {
+		"urlCheck": true,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"appid": "wx8e2a32f7e3e28aa2",
+	"projectname": "%E5%96%9C%E5%B8%96",
+	"miniprogramRoot": "dist/",
+	"condition": {}
+}
