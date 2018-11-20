@@ -1,0 +1,32 @@
+<style lang="scss">
+
+.container {
+  width: 100px;
+  border: #3190e8 solid 2px;
+}
+</style>
+<template>
+  <view class="container">
+    <view>
+      <li>{{qq}}</li>
+    </view>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+
+  export default class A extends wepy.page {
+    config = {
+      navigationBarTitleText: 'A',
+    }
+    components = {}
+    data = {
+      qq: 'dddd'
+    }
+    methods = {}
+
+    onLoad() {
+    }
+  }
+</script>

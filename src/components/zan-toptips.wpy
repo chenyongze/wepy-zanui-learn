@@ -68,6 +68,7 @@ export default class zanToptips extends wepy.component {
           })
           .exec()
       }
+
       // 设置定时器，定时关闭topTips
       let timer = setTimeout(() => {
         this.topTips.show = false

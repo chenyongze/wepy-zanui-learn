@@ -1,25 +1,42 @@
-<style lang="scss">
-
+<style lang='scss'>
+  @import '../zanui/panel';
 </style>
+
 <template>
-  <view class="Me">
-    {{namex}}
+  <view class="container">
+
+    <view class="doc-title zan-hairline--bottom">我的</view>
+
+    <view class="zan-panel-title">标题</view>
+    <view class="zan-panel">
+      <view style="padding: 15px;">内容</view>
+    </view>
+
+    <view class="zan-panel">
+      <view style="padding: 15px;">内容</view>
+    </view>
+
+    <view class="zan-panel zan-panel--without-border">
+      <view style="padding: 15px;">无边框的panel</view>
+    </view>
+
+    <view class="zan-panel">
+      <view style="padding: 15px;">内容</view>
+    </view>
+
   </view>
 </template>
 
 <script>
-import wepy from 'wepy'
+  import wepy from 'wepy'
 
-export default class Me extends wepy.page {
-  // 设置里 JOSN 配置
-  config = {
-    navigationBarTitleText: '我的'
+  export default class Panel extends wepy.page {
+    config = {
+      navigationBarTitleText: '我的'
+    }
+    components = {}
+    data = {}
+    methods = {}
+    onLoad() {}
   }
-  data = {
-    namex: 'xxxxxxxx'
-  }
-  onLoad() {
-    console.log('onLoad')
-  }
-}
 </script>

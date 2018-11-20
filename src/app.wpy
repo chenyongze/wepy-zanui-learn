@@ -1,9 +1,9 @@
 <style lang="scss">
-
 // 引入 iconfont
-@import './style/iconfont.wxss';
+@import './style/iconfont';
 // 全局引入银行卡 iconfont
-@import './style/bankIconFont.wxss';
+@import './style/bankIconFont';
+
 page {
   background-color: #f4f4f4;
   font-size: 12px;
@@ -13,8 +13,7 @@ page {
   }
 }
 
-
-@import 'zanui/helper.scss';
+@import './zanui/helper';
 .container {
   background: #f9f9f9;
   overflow: hidden;
@@ -58,7 +57,8 @@ export default class extends wepy.app {
   config = {
     pages: [
       'pages/index',
-      'pages/category',
+      'pages/cart',
+      'pages/test/a',
       'pages/me',
       'example/dashboard',
       'example/actionsheet',
@@ -104,19 +104,19 @@ export default class extends wepy.app {
           selectedIconPath: '/images/images/icon_home_active@3x.png'
         },
         {
-          pagePath: 'pages/category',
+          pagePath: 'example/steps',
           text: '分类',
           iconPath: '/images/images/icon_category@3x.png',
           selectedIconPath: '/images/images/icon_category_active@3x.png'
         },
         {
-          pagePath: 'example/badge',
+          pagePath: 'example/dashboard',
           text: '优show',
           iconPath: '/images/images/icon_show@3x.png',
           selectedIconPath: '/images/images/icon_show_active@3x.png'
         },
         {
-          pagePath: 'example/toast',
+          pagePath: 'pages/cart',
           text: '购物车',
           iconPath: '/images/images/icon_cart@3x.png',
           selectedIconPath: '/images/images/icon_cart_active@3x.png'

@@ -215,6 +215,9 @@ export default class zanActionsheet extends wepy.component {
             this.zanActionsheet.show = false
             action.loding = false
             this.$apply()
+            resolve({
+              type
+            })
           })
           .catch(e => {
             action.loding = false
@@ -223,11 +226,11 @@ export default class zanActionsheet extends wepy.component {
       } else {
         this.zanActionsheet.show = false
         action.loding = false
+        this.$apply()
+        resolve({
+          type
+        })
       }
-      this.$apply()
-      resolve({
-        type
-      })
     }
   }
   computed = {}

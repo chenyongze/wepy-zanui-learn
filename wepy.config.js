@@ -5,6 +5,9 @@ module.exports = {
     sass: {
       outputStyle: 'compressed'
     },
+    less: {
+      outputStyle: 'compressed'
+    },
     babel: {
       sourceMap: true,
       presets: ['es2015', 'stage-1'],
